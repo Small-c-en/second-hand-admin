@@ -245,20 +245,6 @@
 <script setup name="ProductReviewPage">
 import { ref, computed, onMounted } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import {
-  Check,
-  Close,
-  Warning,
-  InfoFilled,
-  Search,
-  Clock,
-  User,
-  Picture,
-  View,
-  Money,
-  More,
-  Inbox,
-} from '@element-plus/icons-vue'
 
 // 加载状态
 const loading = ref(false)
