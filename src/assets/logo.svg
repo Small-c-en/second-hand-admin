@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 10h30v30H20z" fill="#FF6F00"/>
+  <path d="M60 10h120v30H60z" fill="#2C3E50"/>
+  <text x="70" y="32" fill="#FFFFFF" font-family="Arial" font-size="18" font-weight="bold">
+    二手管家
+  </text>
+</svg> 

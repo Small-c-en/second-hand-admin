@@ -1,0 +1,122 @@
+// Element Plus 主题定制
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #ff6f00,
+    ),
+    'warning': (
+      'base': #e6a23c,
+    ),
+    'danger': (
+      'base': #f56c6c,
+    ),
+    'info': (
+      'base': #909399,
+    ),
+  )
+);
+
+// 自定义组件样式覆盖
+:root {
+  --el-color-primary: #ff6f00;
+  --el-color-primary-light-3: #ff9d4d;
+  --el-color-primary-light-5: #ffb77a;
+  --el-color-primary-light-7: #ffd0a8;
+  --el-color-primary-light-8: #ffddc1;
+  --el-color-primary-light-9: #fff0e6;
+  --el-color-primary-dark-2: #cc5900;
+}
+
+// 按钮悬浮效果
+.el-button--primary {
+  &:hover,
+  &:focus {
+    background: var(--el-color-primary-light-3);
+    border-color: var(--el-color-primary-light-3);
+  }
+}
+
+// 链接按钮
+.el-button--text {
+  &.el-button--primary {
+    color: var(--el-color-primary);
+    &:hover,
+    &:focus {
+      color: var(--el-color-primary-light-3);
+    }
+  }
+}
+
+// 输入框focus状态
+.el-input__wrapper.is-focus,
+.el-textarea__wrapper.is-focus {
+  box-shadow: 0 0 0 1px var(--el-color-primary) inset !important;
+}
+
+// 选择器选中状态
+.el-select .el-input__wrapper.is-focus {
+  box-shadow: 0 0 0 1px var(--el-color-primary) inset !important;
+}
+
+// 分页器
+.el-pagination.is-background {
+  .el-pager li:not(.is-disabled) {
+    &.is-active {
+      background-color: var(--el-color-primary);
+    }
+    &:hover {
+      color: var(--el-color-primary);
+    }
+  }
+}
+
+// 表格hover
+.el-table {
+  tbody tr:hover > td {
+    background-color: var(--el-color-primary-light-9) !important;
+  }
+}
+
+// 菜单激活状态
+.el-menu-item.is-active {
+  color: var(--el-color-primary) !important;
+  background-color: var(--el-color-primary-light-9);
+}
+
+// 标签页
+.el-tabs__item {
+  &.is-active {
+    color: var(--el-color-primary);
+  }
+  &:hover {
+    color: var(--el-color-primary);
+  }
+}
+
+// 单选框
+.el-radio__input.is-checked {
+  .el-radio__inner {
+    background-color: var(--el-color-primary);
+    border-color: var(--el-color-primary);
+  }
+  & + .el-radio__label {
+    color: var(--el-color-primary);
+  }
+}
+
+// 复选框
+.el-checkbox__input.is-checked {
+  .el-checkbox__inner {
+    background-color: var(--el-color-primary);
+    border-color: var(--el-color-primary);
+  }
+  & + .el-checkbox__label {
+    color: var(--el-color-primary);
+  }
+}
+
+// 开关
+.el-switch.is-checked .el-switch__core {
+  background-color: var(--el-color-primary);
+  border-color: var(--el-color-primary);
+}
